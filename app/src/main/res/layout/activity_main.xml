@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.lsb.myapplicationl.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#8fffdf"
-        android:textSize="45sp"
-        android:text="토우오오투오" />
+   <ImageView
+       android:src="@drawable/City"
+       android:scaleType="center"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
 
 
 </LinearLayout>
