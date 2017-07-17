@@ -11,16 +11,28 @@
 
  <TextView
      android:text="Hello"
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
+     android:layout_width="match_parent"
+     android:layout_height="0dp"
+     android:layout_weight="1"
      android:textSize="48sp"
+     android:background="#7dafff"
      />
 
  <TextView
      android:text="World"
      android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
+     android:layout_height="0dp"
+     android:layout_weight="1"
      android:textSize="48sp"
+     android:background="#7dafff"
+     />
+ <TextView
+     android:text="World"
+     android:layout_width="wrap_content"
+     android:layout_height="0dp"
+     android:layout_weight="1"
+     android:textSize="48sp"
+     android:background="#7dafff"
      />
 
 
