@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/hi"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/hippocampus"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        />
+
+
+    <TextView
+        android:id="@+id/hippocampus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/hi"
+        android:text="해마"
+        android:textSize="32sp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/hippocampus_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/hi"
+        android:layout_below="@id/hippocampus_text"
+        android:text="바다에서 살고있음"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/hi"
+        android:layout_below="@id/hippocampus_text2"
+        android:text="여기서 꽤 먼 바다"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>
