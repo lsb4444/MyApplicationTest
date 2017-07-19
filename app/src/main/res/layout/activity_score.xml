@@ -25,6 +25,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="Team A"
                 android:textSize="16sp" />
 
@@ -32,8 +33,8 @@
                 android:id="@+id/TeamA_Score_View"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="0"
                 android:textSize="24sp" />
 
@@ -44,7 +45,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="#fdc190"
+                android:backgroundTint="#fdc190"
                 android:onClick="TeamA3PointsButtonClicked"
                 android:text="+3 POINTS"
                 android:textSize="16sp" />
@@ -55,7 +56,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="#fdc190"
+                android:backgroundTint="#fdc190"
                 android:onClick="TeamA2PointsButtonClicked"
                 android:text="+2 POINTS"
                 android:textSize="16sp" />
@@ -66,7 +67,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="#fdc190"
+                android:backgroundTint="#fdc190"
                 android:onClick="TeamA1PointsButtonClicked"
                 android:text="FREE THROW"
                 android:textSize="16sp" />
@@ -90,6 +91,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="Team B"
                 android:textSize="16sp" />
 
@@ -97,10 +99,10 @@
                 android:id="@+id/TeamB_Score_View"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
-                android:layout_margin="8dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="0"
-                android:textSize="24sp" />
+                android:textSize="24dp" />
 
             <Button
                 android:id="@+id/TeamB_3Points_Button"
@@ -108,7 +110,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="#fdc190"
+                android:backgroundTint="#fdc190"
                 android:onClick="TeamB3PointsButtonClicked"
                 android:text="+3 POINTS"
                 android:textSize="16sp" />
@@ -119,7 +121,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="#fdc190"
+                android:backgroundTint="#fdc190"
                 android:onClick="TeamB2PointsButtonClicked"
                 android:text="+2 POINTS"
                 android:textSize="16sp" />
@@ -130,7 +132,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="8dp"
                 android:layout_weight="1"
-                android:background="#fdc190"
+                android:backgroundTint="#fdc190"
                 android:onClick="TeamB1PointsButtonClicked"
                 android:text="FREE THROW"
                 android:textSize="16sp" />
@@ -143,7 +145,7 @@
         android:layout_weight="1">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
@@ -151,17 +153,17 @@
 
         <Button
             android:id="@+id/Reset_Button"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_marginBottom="8dp"
             android:layout_weight="1"
-            android:background="#fdc190"
+            android:backgroundTint="#fdc190"
             android:onClick="ResetClicked"
             android:text="reset" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"></LinearLayout>
     </LinearLayout>
