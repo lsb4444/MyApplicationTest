@@ -9,6 +9,30 @@
     android:orientation="vertical"
     tools:context="com.lsb.myapplicationl.CoffeeActivity">
 
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="주문자 이름을 입력 해 주세요" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toppings"
+        android:textAllCaps="true" />
+
+    <CheckBox
+        android:id="@+id/whipped_cream_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="onCheckBoxClicked"
+        android:paddingLeft="24dp"
+        android:paddingStart="24dp"
+
+        android:text="휘핑크림" />
+
 
     <TextView
         android:layout_width="wrap_content"
@@ -62,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="0원"
+        android:text="3000원"
         android:textColor="#000000" />
 
     <Button
