@@ -43,6 +43,12 @@
                 android:layout_height="wrap_content"
                 android:onClick="onButtonClicked"
                 android:text="이동" />
+            <Button
+                android:id="@+id/Refresh_Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onButtonClicked"
+                android:text="새로고침" />
 
         </LinearLayout>
 

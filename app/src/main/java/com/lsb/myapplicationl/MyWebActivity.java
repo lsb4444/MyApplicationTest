@@ -20,6 +20,7 @@ public class MyWebActivity extends AppCompatActivity {
         mUrlEdit = (EditText) findViewById(R.id.Url_Edit);
         mWebView = (WebView) findViewById(R.id.web_page_view);
     }
+
     public void onButtonClicked(View view) {
         switch (view.getId()) {
             case R.id.Back_Button:
@@ -38,8 +39,12 @@ public class MyWebActivity extends AppCompatActivity {
 
                 mWebView.setWebViewClient(new WebViewClient());
                 break;
+            case R.id.Refresh_Button:
+                mWebView.reload();
+                break;
         }
     }
+
     @Override
     public void onBackPressed() {
         if (mWebView.canGoBack()) {
