@@ -1,5 +1,6 @@
 package com.lsb.myapplicationl;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -52,14 +53,10 @@ public class CoffeeActivity extends AppCompatActivity {
         }
         display();
     }
-
-
     public void plusBottonCliced(View view) {
         mQuantity++;
         display();
     }
-
-
     public void onCheckBoxClicked(View view) {
         display();
     }
@@ -73,5 +70,18 @@ public class CoffeeActivity extends AppCompatActivity {
         message += "\n가격 : " + mFormat.format(mQuantity * PRICE) + "원";
 
         mPriceTextView.setText(message);
+    }
+
+    public void onOderButtonClicked(View view) {
+
+        MmsMessage(mPriceTextView.getText().toString());
+    }
+    public void MmsMessage(String message) {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, message);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 }

@@ -90,6 +90,8 @@
         android:textColor="#000000" />
 
     <Button
+        android:id="@+id/oder_button"
+        android:onClick="onOderButtonClicked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
