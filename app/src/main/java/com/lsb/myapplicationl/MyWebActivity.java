@@ -5,15 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
 import android.widget.EditText;
 
 public class MyWebActivity extends AppCompatActivity {
 
     private EditText mUrlEdit;
-    private Button mBackButton;
-    private Button mFrontButton;
-    private Button mGoButton;
     private WebView mWebView;
 
     @Override
@@ -22,12 +18,8 @@ public class MyWebActivity extends AppCompatActivity {
         setContentView(R.layout.activity_my_web);
 
         mUrlEdit = (EditText) findViewById(R.id.Url_Edit);
-        mBackButton = (Button) findViewById(R.id.Back_Button);
-        mFrontButton = (Button) findViewById(R.id.Front_Button);
-        mGoButton = (Button) findViewById(R.id.go_Button);
         mWebView = (WebView) findViewById(R.id.web_page_view);
     }
-
     public void onButtonClicked(View view) {
         switch (view.getId()) {
             case R.id.Back_Button:
@@ -48,7 +40,6 @@ public class MyWebActivity extends AppCompatActivity {
                 break;
         }
     }
-
     @Override
     public void onBackPressed() {
         if (mWebView.canGoBack()) {
