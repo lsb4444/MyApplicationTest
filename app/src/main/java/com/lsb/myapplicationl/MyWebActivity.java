@@ -19,6 +19,9 @@ public class MyWebActivity extends AppCompatActivity {
 
         mUrlEdit = (EditText) findViewById(R.id.Url_Edit);
         mWebView = (WebView) findViewById(R.id.web_page_view);
+
+        mWebView.setWebViewClient(new WebViewClient());
+        mWebView.getSettings().setJavaScriptEnabled(true);
     }
 
     public void onButtonClicked(View view) {
@@ -30,14 +33,12 @@ public class MyWebActivity extends AppCompatActivity {
                 mWebView.goForward();
                 break;
             case R.id.go_Button:
-                char first = mUrlEdit.getText().charAt(1);
                 String url = mUrlEdit.getText().toString();
-                if (first == 'w') {
+                if (!(url.contains("http://"))) {
                     url = "http://" + url;
                 }
                 mWebView.loadUrl(url);
 
-                mWebView.setWebViewClient(new WebViewClient());
                 break;
             case R.id.Refresh_Button:
                 mWebView.reload();
