@@ -34,7 +34,9 @@ public class MyWebActivity extends AppCompatActivity {
                 break;
             case R.id.go_Button:
                 String url = mUrlEdit.getText().toString();
-                if (!(url.contains("http://"))) {
+                String url_check = mUrlEdit.getText().toString();
+                url_check = url_check.toLowerCase();
+                if (!(url_check.startsWith("http://")||!(url_check.startsWith("https://")))) {
                     url = "http://" + url;
                 }
                 mWebView.loadUrl(url);

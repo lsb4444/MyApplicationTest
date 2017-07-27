@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context="com.lsb.myapplicationl.SignUpExamActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디 및 비밀번호" />
+
+        <EditText
+            android:id="@+id/id_Edit_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="아이디" />
+
+        <EditText
+            android:id="@+id/password_edit_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/password_edit_Text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호 확인"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일 및 성별" />
+
+        <EditText
+            android:id="@+id/Email_Edit_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="이메일" />
+
+        <RadioGroup
+            android:id="@+id/gender_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/man_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="남자" />
+
+            <RadioButton
+                android:id="@+id/woman_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여성"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Reset_Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onButtonClicked"
+            android:text="초기화" />
+
+        <Button
+            android:id="@+id/Signup_Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onButtonClicked"
+            android:text="가입" />
+    </LinearLayout>
+
+
+</LinearLayout>

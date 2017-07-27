@@ -55,15 +55,42 @@
             </intent-filter>
         </activity>
         <activity android:name=".ControlActivity" />
-        <activity android:name=".MyWebActivity"
+        <activity
+            android:name=".MyWebActivity"
             android:label="나의 웹 페이지">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SignUpExamActivity"
+            android:label="SignUpExam">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignUpExam2Activity"
+            android:label="SignUpExam" />
+        <activity android:name=".adapterview.AdapterviewExamActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SbAdapterviewExamActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".adapterview.AddPlaceActivity"></activity>
     </application>
 
 </manifest>

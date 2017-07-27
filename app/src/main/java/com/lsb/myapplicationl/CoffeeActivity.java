@@ -77,7 +77,7 @@ public class CoffeeActivity extends AppCompatActivity {
         MmsMessage(mPriceTextView.getText().toString());
     }
     public void MmsMessage(String message) {
-        Intent intent = new Intent(Intent.ACTION_SEND);
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT, message);
         if (intent.resolveActivity(getPackageManager()) != null) {
